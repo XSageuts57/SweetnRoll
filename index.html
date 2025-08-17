@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet'n Roll | Cinnamon Rolls Artesanales en Lima | Pedidos Online</title>
+  <meta name="description" content="Los mejores cinnamon rolls de Lima. Hechos artesanalmente con ingredientes premium. Prueba nuestros rolls clásicos, de chocolate, nuez caramelizada y sabores de temporada. Delivery disponible.">
+  <meta name="keywords" content="cinnamon rolls, rolls de canela, postres Lima, panadería artesanal, dulces peruanos, pedidos online, delivery postres">
+  <meta name="author" content="Sweet'n Roll">
+  
+  <!-- Favicon (icono del navegador) -->
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Sweet'n Roll | Los mejores Cinnamon Rolls de Lima">
+  <meta property="og:description" content="Deliciosos cinnamon rolls artesanales hechos con ingredientes premium y mucho amor. ¡Prueba nuestros sabores signature hoy!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sweetnroll.com">
+  <meta property="og:image" content="https://www.sweetnroll.com/img/og-image.jpg">
+  <meta property="og:site_name" content="Sweet'n Roll">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sweet'n Roll | Los mejores Cinnamon Rolls de Lima">
+  <meta name="twitter:description" content="Deliciosos cinnamon rolls artesanales hechos con ingredientes premium y mucho amor. ¡Prueba nuestros sabores signature hoy!">
+  <meta name="twitter:image" content="https://www.sweetnroll.com/img/twitter-card.jpg">
+  
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script>
+  // Título original que se guarda al cargar la página
+  const originalTitle = document.title;
+  
+  // Función para cambiar el título cuando el usuario sale
+  function handleVisibilityChange() {
+    if (document.hidden) {
+      document.title = "¡🥞 No te vayas 😭💔!";
+    } else {
+      document.title = originalTitle;
+    }
+  }
+  
+  // Evento que se dispara cuando cambia la visibilidad de la página
+  document.addEventListener("visibilitychange", handleVisibilityChange);
+  
+  // También podemos agregar eventos para cuando el mouse sale de la ventana
+  document.addEventListener("mouseout", (e) => {
+    // Verificamos si el mouse sale hacia arriba (fuera de la ventana)
+    if (e.clientY < 0) {
+      document.title = "No ¡🥞 No te vayas 😭💔!";
+      
+      // Restauramos el título después de 2 segundos si el usuario no regresa
+      setTimeout(() => {
+        if (!document.hidden) {
+          document.title = originalTitle;
+        }
+      }, 2000);
+    }
+  });
+  
+  // Evento para cuando el mouse regresa a la ventana
+  document.addEventListener("mouseover", () => {
+    if (!document.hidden) {
+      document.title = originalTitle;
+    }
+  });
+</script>
+</head>
+<body>
+  <!-- BARRA DE NAVEGACIÓN (ORIGINAL) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img src="img/logo.png" alt="Sweet'n Roll Logo" class="logo">
+        <span class="brand-text" data-text="Sweet'n Roll">Sweet'n Roll</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#productos" class="fade-in" data-delay="100">
+          <i class="fas fa-bread-slice"></i>
+          <span>Nuestros Rolls</span>
+        </a>
+        <a href="#sabores" class="fade-in" data-delay="200">
+          <i class="fas fa-ice-cream"></i>
+          <span>Sabores</span>
+        </a>
+        <a href="#nosotros" class="fade-in" data-delay="300">
+          <i class="fas fa-book-open"></i>
+          <span>Nuestra Historia</span>
+        </a>
+        <a href="#contacto" class="fade-in" data-delay="400">
+          <i class="fas fa-shopping-bag"></i>
+          <span>Pedidos</span>
+        </a>
+        <a href="#ubicacion" class="fade-in" data-delay="400">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Visítanos</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contacto" class="btn-order-mobile fade-in"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION MEJORADA -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="fade-in neon-title" data-delay="0">Rolls de Canela Artesanales <span class="fade-in neon-highlight" data-delay="150">Hechos con Amor</span></h1>
+          <p class="subtitle fade-in" data-delay="300">Elaborados diariamente con los mejores ingredientes para crear el swirl perfecto</p>
+          <div class="hero-buttons">
+            <a href="#productos" class="btn btn-primary fade-in" data-delay="450">Ver Menú</a>
+            <a href="#contacto" class="btn btn-outline fade-in" data-delay="600">Hacer Pedido</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="img/hero-roll.jpg" alt="Rolls de canela recién horneados" class="roll-image zoom-effect">
+          <div class="badge pulse">
+            <span>Frescos Diariamente</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down float">
+        <span>Desliza para explorar</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE SABORES -->
+  <section id="sabores" class="section sabores-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag fade-in" data-delay="0">Nuestras Especialidades</p>
+        <br>
+<h2 class="section-title fade-in neon-soft" data-delay="100">Sabores Signature</h2>
+        <p class="section-sub fade-in" data-delay="200">Cada roll tiene su propia personalidad única</p>
+      </div>
+      
+      <div class="sabores-grid">
+        <div class="sabor-card fade-in scale-in" data-delay="100">
+          <div class="sabor-imagen hover-glow">
+            <img src="img/roll2.jpg" alt="Roll Clásico">
+            <div class="sabor-etiqueta">Más Vendido</div>
+          </div>
+          <div class="sabor-info">
+            <h3 class="neon-text">Clásico</h3>
+            <p>Nuestra receta original con canela de Ceilán y glaseado de vainilla Madagascar</p>
+            <div class="sabor-meta">
+              <span class="precio">$3.99</span>
+              <button class="btn-add dynamic-shadow">+ Añadir al Pedido</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sabor-card fade-in scale-in" data-delay="200">
+          <div class="sabor-imagen hover-glow">
+            <img src="img/roll3.jpg" alt="Roll de Chocolate">
+            <div class="sabor-etiqueta nuevo">Nuevo</div>
+          </div>
+          <div class="sabor-info">
+            <h3 class="neon-text">Chocolate Belga</h3>
+            <p>Relleno de chocolate 70% cacao con glaseado de chocolate blanco</p>
+            <div class="sabor-meta">
+              <span class="precio">$4.20</span>
+              <button class="btn-add dynamic-shadow">+ Añadir al Pedido</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sabor-card fade-in scale-in" data-delay="300">
+          <div class="sabor-imagen hover-glow">
+            <img src="img/roll4.jpg" alt="Roll de Nuez">
+          </div>
+          <div class="sabor-info">
+            <h3 class="neon-text">Nuez Caramelizada</h3>
+            <p>Nuez pecana caramelizada con un toque de bourbon</p>
+            <div class="sabor-meta">
+              <span class="precio">$4.50</span>
+              <button class="btn-add dynamic-shadow">+ Añadir al Pedido</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sabor-card fade-in scale-in" data-delay="400">
+          <div class="sabor-imagen hover-glow">
+            <img src="img/roll5.jpg" alt="Roll Especial">
+            <div class="sabor-etiqueta temporada">Temporada</div>
+          </div>
+          <div class="sabor-info">
+            <h3 class="neon-text">Especial de Temporada</h3>
+            <p>Nuestro roll rotativo con ingredientes de temporada</p>
+            <div class="sabor-meta">
+              <span class="precio">$4.75</span>
+              <button class="btn-add dynamic-shadow">+ Añadir al Pedido</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="ver-todos">
+        <a href="#productos" class="btn-text fade-in" data-delay="500">Ver menú completo <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section galeria-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title fade-in neon-soft" data-delay="100">Nuestro Proceso</h2>
+        <p class="section-sub fade-in" data-delay="100">Desde la masa hasta el glaseado perfecto</p>
+      </div>
+      <div class="galeria-grid">
+        <div class="galeria-item grande fade-in hover-glow" data-delay="100">
+          <img src="img/roll4.jpg" alt="Rolls recién horneados">
+          <div class="galeria-texto">
+            <p>Recién salidos del horno</p>
+          </div>
+        </div>
+        <div class="galeria-item fade-in hover-glow" data-delay="200">
+          <img src="img/roll5.jpg" alt="Detalle de glaseado">
+          <div class="galeria-texto">
+            <p>Glaseado perfecto</p>
+          </div>
+        </div>
+        <div class="galeria-item fade-in hover-glow" data-delay="300">
+          <img src="img/roll6.jpg" alt="Ingredientes">
+          <div class="galeria-texto">
+            <p>Ingredientes premium</p>
+          </div>
+        </div>
+        <div class="galeria-item fade-in hover-glow" data-delay="400">
+          <img src="img/roll7.jpg" alt="Local">
+          <div class="galeria-texto">
+            <p>Nuestro espacio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="section nuestra-historia">
+    <div class="container">
+      <div class="historia-contenido">
+        <div class="historia-texto">
+          <span class="section-tag fade-in" data-delay="0">Nuestra Historia</span>
+<h2 class="section-title fade-in neon-soft" data-delay="100">Horneando Felicidad desde 2024</h2>
+          <p class="fade-in" data-delay="200">Lo que comenzó como un proyecto de pasión en una pequeña cocina se ha convertido en Sweet'n Roll, donde cada roll de canela cuenta una historia de artesanía y dedicación.</p>
+          <p class="fade-in" data-delay="300">Utilizamos solo los mejores ingredientes - desde canela de Sri Lanka hasta chocolate belga - porque creemos que el sabor excepcional comienza con componentes excepcionales.</p>
+          <div class="firma fade-in" data-delay="400">
+            <img src="img/signature.png" alt="Firma de la fundadora">
+            <span>Ariana Orrego, Fundadora</span>
+          </div>
+        </div>
+        <div class="historia-imagen">
+          <img src="img/bakery-story.jpg" alt="Nuestra pastelería" class="imagen-principal rotate-in">
+          <div class="elemento-decorativo"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section testimonios-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title fade-in neon-soft" data-delay="100">Lo que dicen nuestros clientes</h2>
+        <p class="section-sub fade-in" data-delay="100">El mejor cumplido es una sonrisa con canela</p>
+      </div>
+      <div class="testimonios-contenedor">
+        <div class="testimonio activo glass-effect fade-in" data-delay="200">
+          <div class="testimonio-contenido">
+            <div class="calificacion">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Los mejores cinnamon rolls que he probado en mi vida. El glaseado es perfecto, ni demasiado dulce ni muy escaso. ¡El balance ideal!"</p>
+            <div class="autor">
+              <img src="img/cliente1.jpg" alt="Ana Martínez" class="hover-glow">
+              <span>Ana Martínez</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio glass-effect fade-in" data-delay="300">
+          <div class="testimonio-contenido">
+            <div class="calificacion">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"La textura es increíble, esponjosos por dentro y con ese toque crujiente por fuera. ¡Mi desayuno favorito!"</p>
+            <div class="autor">
+              <img src="img/cliente2.jpg" alt="Carlos Rodríguez" class="hover-glow">
+              <span>Carlos Rodríguez</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="section ubicacion-section">
+    <div class="container">
+      <div class="ubicacion-contenido">
+        <div class="ubicacion-info">
+          <h2 class="section-title fade-in neon-soft" data-delay="100">Visítanos</h2>
+          <div class="detalles-ubicacion">
+            <div class="detalle-item fade-in" data-delay="100">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Doña Hilda 101, Distrito Surco, Lima</span>
+            </div>
+            <div class="detalle-item fade-in" data-delay="200">
+              <i class="fas fa-clock"></i>
+              <div>
+                <p><strong>Lunes-Viernes:</strong> 8am - 6pm</p>
+                <p><strong>Sábado-Domingo:</strong> 9am - 4pm</p>
+              </div>
+            </div>
+            <div class="detalle-item fade-in" data-delay="300">
+              <i class="fas fa-phone-alt"></i>
+              <span>977384380</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary fade-in" data-delay="400">
+            <i class="fas fa-directions"></i> Cómo llegar
+          </a>
+        </div>
+        <div class="ubicacion-mapa fade-in" data-delay="200">
+          <iframe src="https://www.google.com/maps/embed?pb=..." frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section newsletter-section">
+    <div class="container">
+      <div class="newsletter-box glass-effect fade-in" data-delay="0">
+        <div class="newsletter-texto">
+          <h3 class="fade-in neon-text" data-delay="100">Únete a nuestro Roll Club</h3>
+          <p class="fade-in" data-delay="200">Recibe descuentos exclusivos, nuevas recetas y sé el primero en conocer nuestros sabores de temporada.</p>
+        </div>
+        <form class="newsletter-form fade-in" data-delay="300">
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit" class="btn btn-primary">Suscribirme</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section contacto-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title fade-in neon-soft" data-delay="100">Haz tu pedido</h2>
+        <p class="section-sub fade-in" data-delay="100">Recoge en tienda o delivery</p>
+      </div>
+      <div class="contacto-contenido">
+        <div class="contacto-info">
+          <h3 class="fade-in" data-delay="100">Otras formas de ordenar</h3>
+          <div class="metodos-contacto">
+            <a href="#" class="metodo-contacto fade-in dynamic-shadow" data-delay="200">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+            <a href="#" class="metodo-contacto fade-in dynamic-shadow" data-delay="300">
+              <i class="fas fa-phone-alt"></i>
+              <span>Llámanos</span>
+            </a>
+            <a href="#" class="metodo-contacto fade-in dynamic-shadow" data-delay="400">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram DM</span>
+            </a>
+          </div>
+          <div class="info-delivery fade-in" data-delay="300">
+            <h4>Zonas de delivery</h4>
+            <p>Entregamos a toda el área metropolitana con un cargo adicional de $2.50</p>
+          </div>
+        </div>
+        <div class="contacto-formulario">
+          <form class="formulario-pedido glass-effect fade-in" data-delay="200">
+            <div class="form-grid">
+              <label class="fade-in" data-delay="300">
+                Nombre
+                <input type="text" name="nombre" required>
+              </label>
+              <label class="fade-in" data-delay="400">
+                Teléfono
+                <input type="tel" name="telefono" required>
+              </label>
+              <label class="fade-in" data-delay="300">
+                Email
+                <input type="email" name="email">
+              </label>
+              <label class="fade-in" data-delay="400">
+                Fecha de entrega
+                <input type="date" name="fecha">
+              </label>
+              <label class="full fade-in" data-delay="300">
+                Producto
+                <select name="producto" required>
+                  <option value="">Selecciona...</option>
+                  <option>Roll Clásico</option>
+                  <option>Roll de Chocolate</option>
+                  <option>Roll con Nuez</option>
+                  <option>Roll de Temporada</option>
+                  <option>Combo Familiar (4 rolls)</option>
+                  <option>Combo Pareja (2 rolls + café)</option>
+                </select>
+              </label>
+              <label class="full fade-in" data-delay="400">
+                Mensaje especial (alergias, instrucciones, etc.)
+                <textarea name="mensaje" rows="3"></textarea>
+              </label>
+            </div>
+            <div class="form-acciones fade-in" data-delay="400">
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Enviar pedido
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="section instagram-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title fade-in neon-soft" data-delay="100">Síguenos en Instagram</h2>
+        <p class="section-sub fade-in" data-delay="100">@sweetnroll</p>
+      </div>
+      <div class="instagram-feed">
+        <a href="#" class="insta-item fade-in hover-glow" data-delay="100">
+          <img src="img/insta1.jpg" alt="Instagram post">
+          <div class="insta-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="#" class="insta-item fade-in hover-glow" data-delay="200">
+          <img src="img/insta2.jpg" alt="Instagram post">
+          <div class="insta-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="#" class="insta-item fade-in hover-glow" data-delay="300">
+          <img src="img/insta3.jpg" alt="Instagram post">
+          <div class="insta-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="#" class="insta-item fade-in hover-glow" data-delay="400">
+          <img src="img/insta4.jpg" alt="Instagram post">
+          <div class="insta-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col fade-in" data-delay="0">
+          <h4>Sweet'n Roll</h4>
+          <p>Hechos con amor y canela desde 2024.</p>
+          <div class="footer-logo">
+            <img src="img/logo.png" alt="Sweet'n Roll" class="hover-glow">
+          </div>
+        </div>
+        <div class="footer-col fade-in" data-delay="100">
+          <h4>Menú</h4>
+          <ul>
+            <li><a href="#sabores">Nuestros Sabores</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#combos">Combos</a></li>
+            <li><a href="#merch">Merchandising</a></li>
+          </ul>
+        </div>
+        <div class="footer-col fade-in" data-delay="200">
+          <h4>Compañía</h4>
+          <ul>
+            <li><a href="#nosotros">Nuestra Historia</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Eventos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col fade-in" data-delay="300">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#contacto">Pedidos</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Atención al Cliente</a></li>
+          </ul>
+        </div>
+        <div class="footer-col fade-in" data-delay="400">
+          <h4>Síguenos</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+          <div class="payment-methods">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-apple-pay"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Sweet'n Roll. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="#">Términos de Servicio</a>
+          <a href="#">Política de Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="#" class="whatsapp-float pulse">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/script.js"></script>
+
+  <!-- Añadir al final del body, antes del cierre -->
+<nav class="mobile-bottom-nav">
+  <div class="mobile-nav-item">
+    <a href="#productos">
+      <i class="fas fa-bread-slice"></i>
+      <span class="mobile-nav-text">Menú</span>
+    </a>
+  </div>
+  <div class="mobile-nav-item">
+    <a href="#ubicacion">
+      <i class="fas fa-map-marker-alt"></i>
+      <span class="mobile-nav-text">Ubicación</span>
+    </a>
+  </div>
+  <div class="mobile-nav-item">
+    <a href="#contacto">
+      <i class="fas fa-shopping-bag"></i>
+      <span class="mobile-nav-text">Pedidos</span>
+    </a>
+  </div>
+  <div class="mobile-nav-item">
+    <a href="#">
+      <i class="fas fa-user"></i>
+      <span class="mobile-nav-text">Cuenta</span>
+    </a>
+  </div>
+</nav>
+</body>
+</html>
